@@ -1,0 +1,30 @@
+.fokus-textbox
+{
+	font-family: FlamaLight;
+	font-size: 12px;
+	width: 400px;
+	height: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.fokus-multilinetextbox
+{
+	font-family: FlamaLight;
+	font-size: 12px;
+	width: 400px;
+	height: 200px;
+	padding: 10px 15px 10px 15px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.fokus-textbox: hover
+{
+	width: 400px;
+	height: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+}

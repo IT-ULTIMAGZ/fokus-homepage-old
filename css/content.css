@@ -1,0 +1,393 @@
+/*	content.css
+	-----------------------------------
+	- Index content container
+	- Index content button (read more)
+	- Index content text container
+	- Index content typography
+	- Index content animation
+	- Main index container
+	-----------------------------------
+	(C) 2016 Jeremias Rama for ULTIMAGZ 
+*/
+
+@font-face
+{
+	font-family: FlamaBoldItalic;
+	src: url("../fonts/Flama-BoldItalic.otf") format("opentype");
+}
+
+@font-face
+{
+	font-family: MerryweatherRegular;
+	src: url("../fonts/Merriweather-Regular.otf.otf") format("opentype");
+}
+
+.main-container
+{
+	position: absolute;
+	left: 255px;
+	padding: 0px;
+	margin: 0px;
+	margin-top: -10px;
+	width: calc(100% - 255px);
+	height: 100%;
+	transition: left 0.25s linear;
+}
+
+.main-container.visible
+{
+	overflow: visible;
+	visibility: initial;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	margin-top: -10px;
+	left: 0px;
+}
+
+.main-container .recent-article
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: block;
+	vertical-align: top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.article-ccolor
+{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.article-bg
+{	
+
+	background: url(/images/vertical-lines.png) left top repeat;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.article-text
+{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.article-text a
+{
+	text-decoration: none;
+}
+
+.article-text .title
+{
+	font-family: FlamaBasic;
+	letter-spacing: 5px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.article-text .sub-title
+{
+	font-family: FlamaBold;
+	font-size: 42;
+	width: 60%;
+	color: #ffffff;
+	margin: 0 auto;
+	margin-top: 40px;
+	text-align: center;
+	line-height: 100%;
+}
+
+.article-text .body-text
+{
+	font-family: FlamaBasic;
+	font-size: 24;
+	width: 60%;
+	color: #ffffff;
+	margin: 0 auto;
+	margin-top: 30px;
+	line-height: 150%;
+	text-align: center;
+}
+
+.fokus-art-half-sepparator-1
+{
+	border-top: solid #ffffff 5px;
+	width: 40px;
+	margin: 0 auto;
+	margin-top: 10px;
+	/*
+	margin-bottom: 10px;
+	
+	*/
+}
+
+.fokus-content
+{
+	position: absolute;
+	left: 255px;
+	padding: 0px;
+	padding-top: 20px;
+	width: 80%;
+	font-size: 0;
+	transition: left 0.25s linear;
+}
+
+.fokus-content.visible
+{
+	left: 45px;
+	width: 95%;
+	transition: left 0.25s linear;
+}
+
+.fokus-news
+{
+	/* -webkit-border-radius: 8;
+	-moz-border-radius: 8;
+	border-radius: 8px;
+	border: solid #C40000 1px; */
+	width: 325px;
+	height: 370px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	bottom: 0;
+	-webkit-filter: grayscale(100%);
+}
+
+.fokus-news:hover
+{
+	-webkit-filter: grayscale(0%);
+}
+
+.fokus-news .fokus-news-image
+{
+	-webkit-border-radius: 8;
+	-moz-border-radius: 8;
+	border-radius: 8px;
+	height: 200px;
+	width: 100%;
+	max-width: 100%;
+	max-height: 300px;
+	object-fit: cover;
+	background-position: center;
+}
+
+.fokus-news .fokus-news-text
+{
+	/* Fonts */
+	font-size: 12px;
+	font-family: FlamaBasic;
+	color: #ffffff;
+	line-height: 155%;
+	
+	/* Dimension */
+	height: 100px;
+	width: calc(100% - 50px);
+	overflow: hidden;
+	
+	/* Transision 
+	visibility: hidden;
+	opacity: 0;*/
+	transition: all 0.3s linear;
+	
+	/* Display & Positioning */
+	position: absolute;
+	
+	/* Margins */
+	margin: 0px;
+	padding: 25px;
+	bottom: 0;
+	
+	/* Background */
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.fokus-news:hover .fokus-news-text
+{
+	/* Display & Positioning */
+	visibility: visible;
+	opacity: 1;
+	height: calc(100% - 50px);
+	
+	/* Transision 
+	transition: visibility 0s, opacity 0.5s linear;*/
+}
+
+
+.fokus-button-readmore
+{
+	border: solid #ffffff 1px;
+	color: #ffffff;
+	font-family: FlamaBasic;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 40px;
+	padding: 13px;
+	cursor: pointer;
+	width: 275px;
+	display: block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.fokus-button-readmore:hover
+{
+	transition: all 0.3s ease 0s;
+	background: #ffffff;
+	color: #202020;	
+}
+
+.fokus-news .title
+{
+	line-height: 115%;
+	font-family: FlamaBasic;
+	font-size: 20px;
+	font-weight: bold;
+	height: 100px;
+	margin: 0px;
+	padding: 0px;
+	width: 90%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.fokus-news .sub-title
+{
+	font-size: 14px;
+	font-family: FlamaBasic;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 15px;
+	color: #ffffff;
+	max-width: 90%;
+} 
+
+.fokus-read
+{
+	margin-top: 10px;
+	letter-spacing: 1pt;
+	width: 90%;
+}
+
+.fokus-art-half-sepparator-2
+{
+	border-top: solid #ffffff 1px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.fokus-art-half-sepparator-3
+{
+	border-top: solid #ffffff 3px;
+	margin-top: 15px;
+	margin-bottom: -5px;
+	width: 100%;
+}
+
+@media screen and (max-width: 675px)
+{
+	.fokus-content
+	{
+		display: inline-block;
+		left: 80px;
+		width: 80%;
+		transition: left 0.25s linear;
+	}
+
+	.fokus-content.visible
+	{
+		display: none;
+		transition: left 0.25s linear;
+	}
+	
+	.fokus-news
+	{
+		width: 325px;
+		height: 300px;
+		margin: 0px;
+		margin-left: -30px;
+		margin-bottom: 20px;
+	}
+	
+	.main-container
+	{
+		overflow: visible;
+		visibility: initial;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		padding: 0px;
+		margin: 0px;
+		margin-top: -10px;
+		left: 0px;
+	}
+	
+	.main-container.visible
+	{
+		overflow: hidden;
+		visibility: hidden;
+	}
+
+	.article-bg
+	{
+		background: rgba(0, 0, 0, 0.5);
+		height: 100%;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.article-text
+	{
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.article-text .title
+	{
+		font-family: FlamaBold;
+		color: #ffffff;
+		text-align: center;
+		letter-spacing: 5px;
+	}
+
+	.article-text .sub-title
+	{
+		margin-top: 20px;
+		font-size: 20px;
+	}
+
+	.article-text .body-text
+	{
+		font-family: FlamaLight;
+		font-size: 14;
+		width: 60%;
+		color: #ffffff;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}

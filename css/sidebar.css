@@ -1,0 +1,148 @@
+/*	sidebar.css
+	-----------------------------------
+	- Sidebar container
+	- Menu classes (ul/li sett)
+	- Buttons (for menu)
+	-----------------------------------
+	(C) 2016 Jeremias Rama for ULTIMAGZ 
+*/
+
+.fokus-sidebar
+{
+	float: left;
+	margin-right: 20px;
+	width: 195px;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	background: #202020;
+	transition: left 0.25s linear;
+}
+
+.fokus-sidebar.visible
+{
+	left: -250px;
+	transition: left 0.25s linear;
+}
+
+.fokus-logo
+{
+	background: url(../images/ultimagz-logo.png) no-repeat top left;
+	background-size: 100% 100%;
+	width: 175px;
+	margin: 0;
+	margin-left: 30px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	height: 70px;
+}
+
+.fokus-sidebar-control
+{
+    width:100px;
+    height:30px;
+	font-family: FlamaBasic;
+    line-height:50px;
+    color:white;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:bold;
+	margin-top: -5px;
+	margin-left: 35px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	transition: left 0.25s linear;
+	z-index:99;
+	display: none;
+}
+
+.fokus-button
+{
+	font-family: FlamaBasic;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: left;
+	color: #ffffff;
+	padding: 10px 15px 10px 0px;
+	margin: 0 auto;
+	margin-left: 40px;
+	cursor: pointer;
+	
+	/*border: solid #ffffff 1px;
+	box-shadow: inset 0 0 0 0 #ffffff;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;*/
+}
+
+.fokus-button:hover
+{
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+	color:red;
+}
+
+.fokus-button:after
+{
+	margin-left: 40px;
+	text-decoration: none;
+	border-bottom: solid red 2px;
+	content: '';
+	display: block;
+	width: 0px;
+	left: 0px;
+	position: absolute;
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.fokus-button:hover:after
+{
+	width: 10%;
+}
+
+.fokus-menu
+{
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0 auto;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+@media screen and (max-width: 675px)
+{
+	.fokus-sidebar-control
+	{
+		display: block;
+		z-index:99;
+	}
+	
+	.fokus-sidebar
+	{
+		width: 0%;
+		position: absolute;
+		z-index: 58;
+		left: -250px;
+	}
+	
+	.fokus-sidebar.visible
+	{
+		left: 0px;
+		width: 100%;
+		position: absolute;
+		z-index: 59;
+	}
+	
+	/*
+	.fokus-sidebar-control.visible
+	{
+		position: fixed;
+		float: left;
+		left: 0px;
+	}*/
+	
+}
