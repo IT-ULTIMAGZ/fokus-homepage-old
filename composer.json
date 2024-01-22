@@ -1,0 +1,15 @@
+{
+    "name": "user/fokus-homepage-old",
+    "autoload": {
+        "psr-4": {
+            "User\\FokusHomepageOld\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aldrik56",
+            "email": "aldrik.ciaputra@student.umn.ac.id"
+        }
+    ],
+    "require": {}
+}
